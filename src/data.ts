@@ -18,7 +18,7 @@ export const defaultProfile: Profile = {
     zh: '有研学，真问题、真现场、真收获',
     en: 'Real Programs, Real Issues, Real Scenarios, Real Gains',
   },
-  avatarUrl: '/src/assets/images/luna-yu-avatar-professional.png',
+  avatarUrl: '/images/luna-yu-avatar-professional.png',
   bio: [
     {
       zh: '我是于丽娜，长期深耕跨境文旅、研学产品与商务接待，现任香港永顺旅行社总经理，并创立多家文旅与文化交流机构。我的工作，是把产业资源、城市现场、文化内容与客户需求，转化为可落地、可体验、可延展的文旅产品。',
