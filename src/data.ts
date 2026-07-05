@@ -32,7 +32,8 @@ export const defaultProfile: Profile = {
       zh: '我坚持“有研学，真问题、真现场、真收获”。一条好的路线，不只是把人带到某个地方，而是让参与者在真实场景中理解产业、文化、历史与人的关系，并把一次行走转化为有内容、有情感、有审美、有价值的深度体验。',
       en: 'I believe every strong route should begin with real questions, enter real places, and leave real gains. A meaningful journey does more than move people through destinations; it helps participants understand industry, culture, history, and human connection through grounded, emotionally resonant experiences.',
     }
-  ],  tags: [
+  ],
+  tags: [
     { zh: '跨境文旅', en: 'Cross-Border Tourism' },
     { zh: '研学课程开发', en: 'Curriculum Design' },
     { zh: 'MICE 商务定制', en: 'Corporate MICE' },
@@ -215,7 +216,7 @@ export const defaultCapabilityCategories: CapabilityCategory[] = [
       en: 'Operational capability for planning, speed, multi-timezone coordination, and resilient on-site delivery.',
     },
     skills: [
-      { name: { zh: '项目统筹狂人', en: 'Master Planner' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '复杂项目统筹', en: 'Master Planner' }, level: 0, description: { zh: '', en: '' } },
       { name: { zh: '深圳速度执行', en: 'Execution Speed' }, level: 0, description: { zh: '', en: '' } },
       { name: { zh: '跨时区协同', en: 'Multi-timezone Sync' }, level: 0, description: { zh: '', en: '' } },
       { name: { zh: '危机公关保障', en: 'Crisis Management' }, level: 0, description: { zh: '', en: '' } },
@@ -225,7 +226,7 @@ export const defaultCapabilityCategories: CapabilityCategory[] = [
 ];
 export const defaultContactInfo: ContactInfo = {
   wechatId: 'Luna_WT_GBA',
-  wechatQrUrl: '', // Will render beautifully inside ContactSection as interactive mock
+  wechatQrUrl: '/images/wechat-qr.jpg',
   whatsappNumber: '+86 135 3778 6955',
   whatsappUrl: 'https://wa.me/8613537786955',
   email: 'laneige9191@gmail.com',
