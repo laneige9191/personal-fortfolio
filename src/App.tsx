@@ -46,6 +46,11 @@ export default function App() {
         const parsedProfile = JSON.parse(storedProfile);
         // Ensure the latest avatar URL from the template/data.ts is always used
         parsedProfile.avatarUrl = defaultProfile.avatarUrl;
+        const cachedTitle = `${parsedProfile.title?.zh || ''} ${parsedProfile.title?.en || ''}`;
+        if (/专家|Specialist|Expert/i.test(cachedTitle)) {
+          parsedProfile.title = defaultProfile.title;
+          localStorage.setItem('personal_profile', JSON.stringify(parsedProfile));
+        }
         setProfile(parsedProfile);
       }
       if (storedContact) {
