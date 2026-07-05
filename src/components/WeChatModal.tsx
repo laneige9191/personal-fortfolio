@@ -24,6 +24,7 @@ export const WeChatModal: React.FC<WeChatModalProps> = ({
   language,
 }) => {
   const [copied, setCopied] = useState(false);
+  const qrImageUrl = wechatQrUrl || '/images/wechat-qr.jpg';
 
   const handleCopy = () => {
     navigator.clipboard.writeText(wechatId);
@@ -95,7 +96,7 @@ export const WeChatModal: React.FC<WeChatModalProps> = ({
 
               <div className="p-3 bg-white rounded-xl mb-4 shadow-inner">
                 <img
-                  src={wechatQrUrl}
+                  src={qrImageUrl}
                   alt={language === 'zh' ? '微信二维码' : 'WeChat QR Code'}
                   className="w-56 h-56 object-contain"
                 />
