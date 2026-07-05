@@ -4,15 +4,10 @@
  */
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 import {
-  Sliders,
   ArrowRight,
   Sparkles,
-  Award,
-  Briefcase,
-  Layers,
-  Mail,
   ChevronRight,
 } from 'lucide-react';
 
@@ -28,13 +23,11 @@ import { ProfileSection } from './components/ProfileSection';
 import { BusinessLandscape } from './components/BusinessLandscape';
 import { CapabilityMatrix } from './components/CapabilityMatrix';
 import { ContactSection } from './components/ContactSection';
-import { CustomizerPanel } from './components/CustomizerPanel';
 
 export default function App() {
   const [language, setLanguage] = useState<'zh' | 'en'>('zh');
   const [profile, setProfile] = useState<Profile>(defaultProfile);
   const [contactInfo, setContactInfo] = useState<ContactInfo>(defaultContactInfo);
-  const [isCustomizerOpen, setIsCustomizerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   // Load custom data from localStorage if exists
@@ -51,7 +44,7 @@ export default function App() {
           migratedProfile = true;
         }
         const cachedTitle = `${parsedProfile.title?.zh || ''} ${parsedProfile.title?.en || ''}`;
-        if (/专家|Specialist|Expert/i.test(cachedTitle)) {
+        if (/\u4e13\u5bb6|Specialist|Expert/i.test(cachedTitle)) {
           parsedProfile.title = defaultProfile.title;
           migratedProfile = true;
         }
@@ -82,28 +75,6 @@ export default function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleUpdate = (updatedProfile: Profile, updatedContact: ContactInfo) => {
-    setProfile(updatedProfile);
-    setContactInfo(updatedContact);
-    try {
-      localStorage.setItem('personal_profile', JSON.stringify(updatedProfile));
-      localStorage.setItem('personal_contact', JSON.stringify(updatedContact));
-    } catch (e) {
-      console.error('Error writing to localStorage', e);
-    }
-  };
-
-  const handleReset = () => {
-    setProfile(defaultProfile);
-    setContactInfo(defaultContactInfo);
-    try {
-      localStorage.removeItem('personal_profile');
-      localStorage.removeItem('personal_contact');
-    } catch (e) {
-      console.error('Error removing from localStorage', e);
-    }
-  };
-
   const handleScrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -118,12 +89,11 @@ export default function App() {
     heroSub: { zh: '我以文旅和研学为载体，整合深港跨境、海外社群、产业参访与文化现场资源，设计可落地、可传播、可复购的深度体验产品。', en: 'I build study-tour and cultural travel products that connect Shenzhen-HK resources, overseas communities, industry visits, and living cultural contexts into executable, memorable experiences.' } as TranslationSet,
     heroContactBtn: { zh: '联络合作', en: 'Connect' } as TranslationSet,
     heroPortfolioBtn: { zh: '查看核心服务', en: 'Explore Services' } as TranslationSet,
-    customizerTip: { zh: '配置您的网站', en: 'Personalize App' } as TranslationSet,
     navProfile: { zh: '个人简介', en: 'Bio' } as TranslationSet,
     navBusiness: { zh: '核心服务', en: 'Services' } as TranslationSet,
     navCapabilities: { zh: '核心能力', en: 'Capabilities' } as TranslationSet,
     navContact: { zh: '联络通道', en: 'Contact' } as TranslationSet,
-    footerNote: { zh: '本站所有业务板块为真实项目经验整合。欢迎基于定制面板修改为您个人专属的专业履历。', en: 'Synthesized from actual business ventures. Personalize with your own name & contact details via the gear panel!' } as TranslationSet,
+    footerNote: { zh: '以真实项目经验为基础，连接深港资源、海外社群与中国文化现场。', en: 'Built from real project experience, connecting Shenzhen-HK resources, overseas communities, and Chinese cultural contexts.' } as TranslationSet,
   };
 
   return (
@@ -181,17 +151,8 @@ export default function App() {
             </button>
           </nav>
 
-          {/* Interactive Actions Header Side */}
-          <div className="flex items-center gap-3">
-            {/* Customizer Slider Gear Button */}
-            <button
-              onClick={() => setIsCustomizerOpen(true)}
-              className="px-3.5 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-neutral-950 font-bold text-xs transition-all flex items-center gap-1.5 shadow-lg shadow-emerald-500/10 hover:shadow-emerald-500/20 hover:scale-[1.02]"
-              title="Personalize"
-            >
-              <Sliders className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline font-bold">{text.customizerTip[language]}</span>
-            </button>
+          <div className="hidden md:block text-xs font-mono tracking-widest text-neutral-500">
+            SHENZHEN · HONG KONG
           </div>
         </div>
       </header>
@@ -295,23 +256,10 @@ export default function App() {
             <div>
               &copy; {new Date().getFullYear()} {profile.name[language]}. All Rights Reserved.
             </div>
-            <div>
-              Designed & Built with React · Tailwind · Motion
-            </div>
+            <div>Cross-border Cultural Tourism & Study Travel</div>
           </div>
         </div>
       </footer>
-
-      {/* FLOATING CUSTOMIZER PANEL */}
-      <CustomizerPanel
-        isOpen={isCustomizerOpen}
-        onClose={() => setIsCustomizerOpen(false)}
-        profile={profile}
-        contactInfo={contactInfo}
-        onUpdate={handleUpdate}
-        onReset={handleReset}
-        language={language}
-      />
     </div>
   );
 }
