@@ -25,7 +25,6 @@ import {
 } from './data';
 
 import { ProfileSection } from './components/ProfileSection';
-import { ActiveProjects } from './components/ActiveProjects';
 import { BusinessLandscape } from './components/BusinessLandscape';
 import { CapabilityMatrix } from './components/CapabilityMatrix';
 import { ContactSection } from './components/ContactSection';
@@ -102,9 +101,8 @@ export default function App() {
     heroPortfolioBtn: { zh: '查看业务版图', en: 'Explore Venture' } as TranslationSet,
     customizerTip: { zh: '配置您的网站', en: 'Personalize App' } as TranslationSet,
     navProfile: { zh: '个人简介', en: 'Bio' } as TranslationSet,
-    navActiveProjects: { zh: '实时动态', en: 'Live Feed' } as TranslationSet,
     navBusiness: { zh: '业务版图', en: 'Landscape' } as TranslationSet,
-    navCapabilities: { zh: '能力矩阵', en: 'Matrix' } as TranslationSet,
+    navCapabilities: { zh: '核心能力', en: 'Capabilities' } as TranslationSet,
     navContact: { zh: '联络通道', en: 'Contact' } as TranslationSet,
     footerNote: { zh: '本站所有业务板块为真实项目经验整合。欢迎基于定制面板修改为您个人专属的专业履历。', en: 'Synthesized from actual business ventures. Personalize with your own name & contact details via the gear panel!' } as TranslationSet,
   };
@@ -143,16 +141,6 @@ export default function App() {
               className="px-4 py-1.5 text-xs font-semibold text-neutral-300 hover:text-white rounded-full hover:bg-neutral-800/50 transition-all"
             >
               {text.navProfile[language]}
-            </button>
-            <button
-              onClick={() => handleScrollTo('active-projects')}
-              className="px-4 py-1.5 text-xs font-semibold text-neutral-300 hover:text-white rounded-full hover:bg-neutral-800/50 transition-all flex items-center gap-1.5"
-            >
-              <span className="relative flex h-1.5 w-1.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-500"></span>
-              </span>
-              {text.navActiveProjects[language]}
             </button>
             <button
               onClick={() => handleScrollTo('business')}
@@ -261,13 +249,10 @@ export default function App() {
         {/* SECT 1: PERSONAL PROFILE (个人简介) */}
         <ProfileSection profile={profile} contactInfo={contactInfo} language={language} />
 
-        {/* SECT 1.5: ACTIVE PROJECTS (当前进行中项目) */}
-        <ActiveProjects language={language} />
-
         {/* SECT 2: BUSINESS LANDSCAPE (业务版图) */}
         <BusinessLandscape segments={defaultBusinessSegments} language={language} />
 
-        {/* SECT 3: CAPABILITY MATRIX (能力矩阵) */}
+        {/* SECT 3: CORE CAPABILITIES */}
         <CapabilityMatrix categories={defaultCapabilityCategories} language={language} />
 
         {/* SECT 4: CONTACT NETWORK (联系方式) */}
