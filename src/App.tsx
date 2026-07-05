@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -98,10 +98,10 @@ export default function App() {
     heroTitleEnd: { zh: '中国文化现场', en: 'Overseas Chinese Communities & Chinese Heritage' } as TranslationSet,
     heroSub: { zh: '我以文旅和研学为载体，整合深港跨境、海外社群、产业参访与文化现场资源，设计可落地、可传播、可复购的深度体验产品。', en: 'I build study-tour and cultural travel products that connect Shenzhen-HK resources, overseas communities, industry visits, and living cultural contexts into executable, memorable experiences.' } as TranslationSet,
     heroContactBtn: { zh: '联络合作', en: 'Connect' } as TranslationSet,
-    heroPortfolioBtn: { zh: '查看业务版图', en: 'Explore Venture' } as TranslationSet,
+    heroPortfolioBtn: { zh: '查看核心服务', en: 'Explore Services' } as TranslationSet,
     customizerTip: { zh: '配置您的网站', en: 'Personalize App' } as TranslationSet,
     navProfile: { zh: '个人简介', en: 'Bio' } as TranslationSet,
-    navBusiness: { zh: '业务版图', en: 'Landscape' } as TranslationSet,
+    navBusiness: { zh: '核心服务', en: 'Services' } as TranslationSet,
     navCapabilities: { zh: '核心能力', en: 'Capabilities' } as TranslationSet,
     navContact: { zh: '联络通道', en: 'Contact' } as TranslationSet,
     footerNote: { zh: '本站所有业务板块为真实项目经验整合。欢迎基于定制面板修改为您个人专属的专业履历。', en: 'Synthesized from actual business ventures. Personalize with your own name & contact details via the gear panel!' } as TranslationSet,
@@ -248,8 +248,7 @@ export default function App() {
         
         {/* SECT 1: PERSONAL PROFILE (个人简介) */}
         <ProfileSection profile={profile} contactInfo={contactInfo} language={language} />
-
-        {/* SECT 2: BUSINESS LANDSCAPE (业务版图) */}
+        {/* SECT 2: CORE SERVICES */}
         <BusinessLandscape segments={defaultBusinessSegments} language={language} />
 
         {/* SECT 3: CORE CAPABILITIES */}
