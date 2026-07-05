@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
@@ -152,18 +152,18 @@ export const defaultBusinessSegments: BusinessSegment[] = [
       en: 'Medical Wellness / Cross-Border Diagnostics / Bilateral Referrals',
     },
     description: {
-      zh: '整合香港顶尖私人诊所医学专家资源及深圳国医大师级高端中医康养体验。打造“高端诊断 + 跨境就医 + 疗愈旅行 + 全程管家伴护”的尊享级大湾区大健康旅游综合服务。',
-      en: 'Synthesizing premium healthcare diagnostics in Hong Kong with first-rate TCM wellness retreats in Shenzhen. Offering tailored diagnostics, expert consultations, longevity tours, and white-glove companion care.',
+      zh: '整合香港顶尖私人诊所医学资源及深圳国医大师级高端中医康养体验。打造“高端诊断 + 跨境就医 + 疗愈旅行 + 全程管家伴护”的尊享级大湾区大健康旅游综合服务。',
+      en: 'Synthesizing premium healthcare diagnostics in Hong Kong with first-rate TCM wellness retreats in Shenzhen. Offering tailored diagnostics, consultations, longevity tours, and white-glove companion care.',
     },
     metrics: [
-      { label: { zh: '合作名医名诊', en: 'Affiliated HK Specialists' }, value: '150+' },
+      { label: { zh: '合作名医名诊', en: 'Affiliated HK Clinics' }, value: '150+' },
       { label: { zh: '双向绿色通道', en: 'Referral Centers' }, value: '12' },
       { label: { zh: '综合管家服务率', en: 'Concierge Coverage' }, value: '100%' },
     ],
     highlights: [
       { zh: '开辟香港专科医疗与内地中医调理双向流动的跨境医疗绿色快捷通道', en: 'Bridging HK private diagnostics with mainland TCM therapies for fluid green paths' },
       { zh: '定制融汇静心静思、中医康养与文旅休闲的独家养生静修高端服务包', en: 'Custom-tailored elite retreats combining diagnostics, TCM, and mindfulness' },
-      { zh: '提供全流程、多语种的专业客服与全天候专职健康管家一站式陪伴', en: 'One-stop all-weather multilingual health butler and logistics companion' },
+      { zh: '提供全流程、多语种客服与全天候专职健康管家一站式陪伴', en: 'One-stop all-weather multilingual health butler and logistics companion' },
     ],
     iconName: 'HeartPulse',
   },
@@ -174,45 +174,20 @@ export const defaultCapabilityCategories: CapabilityCategory[] = [
     id: 'professional-foundation',
     name: {
       zh: '专业底盘',
-      en: 'Professional Foundation',
+      en: 'Professional',
     },
     description: {
-      zh: '文旅研学产品的核心设计与交付能力，覆盖课程、场景、供应链及跨境资源的高效整合。',
-      en: 'Core product architecture and delivery capability, covering curriculum, scenarios, supply chains, and cross-border assets.',
+      zh: '从课程、场景、企业参访到跨境供应链，把复杂资源整理成可执行的产品结构。',
+      en: 'Product foundations for curriculum, experience design, corporate visits, scenography, supply chains, and cross-border assets.',
     },
     skills: [
-      {
-        name: { zh: '研学课程设计', en: 'Curriculum Design' },
-        level: 95,
-        description: {
-          zh: '开发深度融合科技探索、人文底蕴与真实问题的研学课程，保证真收获。',
-          en: 'Developing deep study pathways blending tech exploration and cultural heritage with high educational value.',
-        },
-      },
-      {
-        name: { zh: '企业参访与资源对接', en: 'Corporate Visits & Sourcing' },
-        level: 93,
-        description: {
-          zh: '深度对接腾讯、大疆等大湾区标杆名企，定制名企参访与高管深度交流闭环。',
-          en: 'Curating executive visits and deep exchanges with GBA giants like Tencent and DJI.',
-        },
-      },
-      {
-        name: { zh: '跨境供应链整合', en: 'Cross-Border Supply Chain' },
-        level: 92,
-        description: {
-          zh: '打通新西兰、港澳及内地多方地接、合规与双向服务绿色通道。',
-          en: 'Linking NZ, HK, Macao, and mainland ground logistics with certified compliance standards.',
-        },
-      },
-      {
-        name: { zh: '跨境医疗与场景营造', en: 'Medical Tourism & Experience Design' },
-        level: 90,
-        description: {
-          zh: '整合香港名医及中医康养，将医疗养生融入到精美的实景美学路线中。',
-          en: 'Synthesizing HK specialist clinics and TCM with aesthetic, peaceful travel designs.',
-        },
-      },
+      { name: { zh: '研学课程设计', en: 'Curriculum Design' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '实景体验营造', en: 'Experience Design' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '企业参访统筹', en: 'Corporate Visits' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '现场场景复刻', en: 'Scenography' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '跨境供应链整合', en: 'Supply Chain' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '海外资源对接', en: 'Global Assets' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '跨境医疗对接', en: 'Medical Tourism' }, level: 0, description: { zh: '', en: '' } },
     ],
     iconName: 'Compass',
   },
@@ -220,75 +195,34 @@ export const defaultCapabilityCategories: CapabilityCategory[] = [
     id: 'aesthetic-appreciation',
     name: {
       zh: '人文审美',
-      en: 'Aesthetic & Culture',
+      en: 'Aesthetic',
     },
     description: {
-      zh: '坚持富有文学质感与思想深度的产品风格，让每一次行走都成为洗涤心灵的审美之旅。',
-      en: 'Insisting on disciplined, poetic styling that elevates study itineraries into emotional and intellectual journeys.',
+      zh: '用文学、人文与非遗表达提升路线质感，让研学和旅行有更深的审美记忆点。',
+      en: 'Humanistic and aesthetic tools that add literary texture, cultural memory, and heritage expression to each route.',
     },
     skills: [
-      {
-        name: { zh: '庄子哲学美学', en: 'Zhuangzi Aesthetic Philosophy' },
-        level: 92,
-        description: {
-          zh: '将庄子“天地有大美而不言”的思想融于自然康养线路中，追求天人合一。',
-          en: 'Infusing Zhuangzi philosophy into natural wellness itineraries to seek cosmic unity.',
-        },
-      },
-      {
-        name: { zh: '毛姆人文笔触', en: 'Maugham\'s Humanism' },
-        level: 89,
-        description: {
-          zh: '以敏锐的、带有文学省思的视角观察和呈现目的地的人文故事与风土。',
-          en: 'Observing destination cultures with a literary, humanistic perspective of self-discovery.',
-        },
-      },
-      {
-        name: { zh: '非遗活化与现场复刻', en: 'Heritage Reimagined & Scenography' },
-        level: 94,
-        description: {
-          zh: '将活化后的非遗元素与场景复刻技术带入定制旅行，再现经典文学美学。',
-          en: 'Recreating classical literary aesthetic spaces inside custom itineraries with active heritage.',
-        },
-      },
+      { name: { zh: '庄子哲学美学', en: 'Zhuangzi Aesthetic' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '毛姆人文笔触', en: "Maugham's Humanism" }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '非遗活化演绎', en: 'Heritage Reimagined' }, level: 0, description: { zh: '', en: '' } },
     ],
     iconName: 'Palette',
   },
   {
     id: 'execution-speed',
     name: {
-      zh: '执行与交付力',
-      en: 'Execution & Delivery',
+      zh: '执行力',
+      en: 'Execution',
     },
     description: {
-      zh: '高韧性、高响应、跨时区的敏捷执行系统，提供极致安心与完美的现场交付。',
-      en: 'High-resilience, multi-timezone agile operations providing robust safety and seamless delivery.',
+      zh: '从项目统筹、深圳速度到跨时区协同，把现场交付做稳、做快、做可控。',
+      en: 'Operational capability for planning, speed, multi-timezone coordination, and resilient on-site delivery.',
     },
     skills: [
-      {
-        name: { zh: '项目统筹狂人', en: 'Master Planner Directorship' },
-        level: 96,
-        description: {
-          zh: '对大型MICE会务、百人团组进行敏捷、精密的统筹调度与应急预案保障。',
-          en: 'Precise coordination, logistical orchestration, and disaster planning for 100+ groups.',
-        },
-      },
-      {
-        name: { zh: '深圳速度执行', en: 'Execution Speed' },
-        level: 95,
-        description: {
-          zh: '24小时极速方案响应、极致效率的资源调配与敏捷落地执行力。',
-          en: 'Rapid 24-hour itinerary proposal generation and ultra-fast deployment loops.',
-        },
-      },
-      {
-        name: { zh: '跨时区协同与危机公关', en: 'Multi-timezone Sync & Crisis Control' },
-        level: 91,
-        description: {
-          zh: '无缝协同大洋洲、港澳与内地商务，具备卓越的突发危机公关与安全保障。',
-          en: 'Fluent coordination across Oceania, HK, and mainland with proactive emergency resilience.',
-        },
-      },
+      { name: { zh: '项目统筹狂人', en: 'Master Planner' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '深圳速度执行', en: 'Execution Speed' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '跨时区协同', en: 'Multi-timezone Sync' }, level: 0, description: { zh: '', en: '' } },
+      { name: { zh: '危机公关保障', en: 'Crisis Management' }, level: 0, description: { zh: '', en: '' } },
     ],
     iconName: 'Zap',
   },
