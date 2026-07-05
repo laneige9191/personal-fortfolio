@@ -90,80 +90,77 @@ export const defaultProfile: Profile = {
 
 export const defaultBusinessSegments: BusinessSegment[] = [
   {
-    id: 'corporate-mice',
+    id: 'corporate-visits',
     title: {
-      zh: '企业 MICE 与高净值定制游',
-      en: 'Corporate MICE & Custom Premium Travel',
+      zh: '企业参访与商务接待',
+      en: 'Corporate Visits & Business Hosting',
     },
     industry: {
-      zh: '企业公关 / 金融私享会 / 商务地接',
-      en: 'Corporate MICE / Financial VIP Salons / Executive Hospitality',
+      zh: '企业 / 高校 / 商协会 / 海外团组',
+      en: 'Enterprise / Universities / Associations / Overseas Groups',
     },
     description: {
-      zh: '面向金融行业、领军实业等高规格客户，提供定制化公关会务与私享旅行。主打红楼梦江南美学、庄子哲学等深度人文审美设计，将商务考察与高质感旅行体验完美交融。',
-      en: 'Delivering tailored business event hosting and elite private group travel for premium financial institutions and market-leading enterprises. Blending executive logistics with rich, bespoke Jiangnan and Zhuangzi philosophical themes.',
+      zh: '为企业、高校、商协会及海外团组设计深港及大湾区参访路线，统筹企业资源、城市现场、商务接待与跨境执行，让一次访问真正形成理解、连接与后续合作可能。',
+      en: 'Designing Shenzhen-HK and Greater Bay Area visit routes for companies, universities, associations, and overseas delegations, with integrated corporate resources, city contexts, business hosting, and cross-border execution.',
     },
     metrics: [
-      { label: { zh: '累计会务服务量', en: 'Custom Groups Served' }, value: '100+' },
-      { label: { zh: '高净值客群占比', en: 'HNW Clients Ratio' }, value: '85%+' },
-      { label: { zh: '综合好评率', en: 'Client Satisfaction' }, value: '99.8%' },
+      { label: { zh: '面向对象', en: 'Best For' }, value: '企业 / 高校 / 商协会 / 海外团组' },
     ],
     highlights: [
-      { zh: '提供端到端管家式高端公关活动统筹，追求零差错的高规格交付品质', en: 'End-to-end white-glove event directorship ensuring flawless execution' },
-      { zh: '融入经典文学与历史本真美学，打破单一会务形式，赋予行程深厚质感', en: 'Weaving high literature and authentic art aesthetics into executive itineraries' },
-      { zh: '拥有海外（新西兰/港澳）与内地双向绿色通道及稀缺景区定制开发特许', en: 'Exclusive access to custom permits and dual-track paths in NZ, HK, and Mainland' },
+      { zh: '资源对接', en: 'Resource Matching' },
+      { zh: '参访设计', en: 'Visit Design' },
+      { zh: '行程统筹', en: 'Itinerary Coordination' },
+      { zh: '现场接待', en: 'On-site Hosting' },
     ],
-    iconName: 'Sparkles',
+    iconName: 'Building2',
   },
   {
-    id: 'gba-study-tour',
+    id: 'study-cultural-experience',
     title: {
-      zh: '大湾区科创研学 (深蓝研学)',
-      en: 'GBA Science & Tech Study Tours',
+      zh: '文旅研学与文化体验',
+      en: 'Study Tours & Cultural Experiences',
     },
     industry: {
-      zh: '青少年研学 / 媒体协同 / 科技游学',
-      en: 'STEM Study Tours / Media Broadcasts / Academic Retreats',
+      zh: '青少年 / 海外华人 / 学校 / 媒体合作',
+      en: 'Youth / Overseas Chinese / Schools / Media Programs',
     },
     description: {
-      zh: '创立“深蓝研学”品牌，聚焦大湾区创新力量。联手江苏卫视等一流电视台深度合作，开发面向港澳青少年、香港高校赴内地的“即刻深圳”(GoSZ)科技企业名校参访线路。',
-      en: 'Curating STEM programs centering GBA science breakthroughs under the "Deep Blue Academy" banner. Coordinating "GoSZ" tech delegation paths for HK/Macao youth in alliance with Jiangsu TV.',
+      zh: '围绕产业、城市、非遗、人文与历史现场设计研学及文化体验产品，将目的地转化为有主题、有课程、有情感记忆的深度行走体验。',
+      en: 'Designing study-tour and cultural experience products around industry, cities, heritage, humanities, and historical sites, turning destinations into themed, curriculum-led, emotionally memorable journeys.',
     },
     metrics: [
-      { label: { zh: '深度合作媒体', en: 'Cooperated Networks' }, value: '3+' },
-      { label: { zh: '精品研学路线', en: 'Bespoke Tour Paths' }, value: '25+' },
-      { label: { zh: '研学接待人次', en: 'Total Students Served' }, value: '10,000+' },
+      { label: { zh: '面向对象', en: 'Best For' }, value: '青少年 / 海外华人 / 学校 / 媒体合作项目' },
     ],
     highlights: [
-      { zh: '深度链接腾讯、大疆等高新标杆企业，策划真问题真动手的研学课题', en: 'Forging deep collaborations with Tencent, DJI, etc., for hands-on innovation labs' },
-      { zh: '与香港知名大专院校建立长期战略输送机制，承接大型两地青年交流参访', en: 'Strategic partnerships with top HK universities for dual-track academic exchange' },
-      { zh: '开发面向港澳及海外青年群组的“即刻深圳(GoSZ)”系列入境科技商务参访', en: 'Broadening "GoSZ" incoming business study products for high-achieving youths' },
+      { zh: '主题策划', en: 'Theme Planning' },
+      { zh: '课程设计', en: 'Curriculum Design' },
+      { zh: '文化现场', en: 'Cultural Contexts' },
+      { zh: '非遗 / 产业 / 城市路线', en: 'Heritage / Industry / City Routes' },
     ],
-    iconName: 'Tv',
+    iconName: 'Landmark',
   },
   {
     id: 'medical-wellness',
     title: {
-      zh: '大湾区医疗旅游与健康管理',
-      en: 'GBA Medical Wellness & Health Tourism',
+      zh: '跨境康养与医疗旅行',
+      en: 'Cross-Border Wellness & Medical Travel',
     },
     industry: {
-      zh: '康养文旅 / 跨境医疗对接 / 双向转诊',
-      en: 'Medical Wellness / Cross-Border Diagnostics / Bilateral Referrals',
+      zh: '高净值客户 / 银发客群 / 海外华人家庭',
+      en: 'HNW Clients / Senior Travelers / Overseas Chinese Families',
     },
     description: {
-      zh: '整合香港顶尖私人诊所医学资源及深圳国医大师级高端中医康养体验。打造“高端诊断 + 跨境就医 + 疗愈旅行 + 全程管家伴护”的尊享级大湾区大健康旅游综合服务。',
-      en: 'Synthesizing premium healthcare diagnostics in Hong Kong with first-rate TCM wellness retreats in Shenzhen. Offering tailored diagnostics, consultations, longevity tours, and white-glove companion care.',
+      zh: '整合博鳌医疗咨询、深圳康养体验与跨境服务安排，为高净值客户、银发客群及海外华人家庭提供更安心、连贯的健康旅行支持。',
+      en: 'Integrating Boao medical consultation, Shenzhen wellness experiences, and cross-border service arrangements for more reassuring and continuous health travel support.',
     },
     metrics: [
-      { label: { zh: '合作名医名诊', en: 'Affiliated HK Clinics' }, value: '150+' },
-      { label: { zh: '双向绿色通道', en: 'Referral Centers' }, value: '12' },
-      { label: { zh: '综合管家服务率', en: 'Concierge Coverage' }, value: '100%' },
+      { label: { zh: '面向对象', en: 'Best For' }, value: '高净值客户 / 银发客群 / 海外华人家庭' },
     ],
     highlights: [
-      { zh: '开辟香港专科医疗与内地中医调理双向流动的跨境医疗绿色快捷通道', en: 'Bridging HK private diagnostics with mainland TCM therapies for fluid green paths' },
-      { zh: '定制融汇静心静思、中医康养与文旅休闲的独家养生静修高端服务包', en: 'Custom-tailored elite retreats combining diagnostics, TCM, and mindfulness' },
-      { zh: '提供全流程、多语种客服与全天候专职健康管家一站式陪伴', en: 'One-stop all-weather multilingual health butler and logistics companion' },
+      { zh: '博鳌医疗资源', en: 'Boao Medical Resources' },
+      { zh: '深圳康养资源', en: 'Shenzhen Wellness Resources' },
+      { zh: '管家式陪同', en: 'Concierge Companion Care' },
+      { zh: '跨境安排', en: 'Cross-Border Arrangements' },
     ],
     iconName: 'HeartPulse',
   },
@@ -227,7 +224,6 @@ export const defaultCapabilityCategories: CapabilityCategory[] = [
     iconName: 'Zap',
   },
 ];
-
 export const defaultContactInfo: ContactInfo = {
   wechatId: 'Luna_WT_GBA',
   wechatQrUrl: '', // Will render beautifully inside ContactSection as interactive mock
