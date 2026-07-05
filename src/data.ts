@@ -21,19 +21,18 @@ export const defaultProfile: Profile = {
   avatarUrl: '/src/assets/images/luna-yu-avatar-professional.png',
   bio: [
     {
-      zh: '我先后创立深圳市国基企业文化管理有限公司、乐景国际旅行社、深领航文旅，并在新西兰创立 New Zealand WT Cultural Exchange & Tourism Limited（NZWT）。现任香港永顺旅行社总经理，长期深耕旅行社运营、客户服务、团队接待和跨境资源整合。我的产品体系涵盖企业公关 MICE、金融行业高净值客户私享会、深蓝研学品牌、银发壮游俱乐部、面向港澳及海外访客的"即刻深圳" (GoSZ) 商务接待与企业参访、电视台合作开发粤港澳大湾区研学，以及香港高校赴内地名企参访项目。',
-      en: 'I founded Shenzhen Guoji Corporate Culture Management, Lejing International Travel Service, Deep Navigation Cultural Tourism, and New Zealand WT Cultural Exchange & Tourism Limited (NZWT). I now serve as General Manager of Hong Kong Wing Shun Travel, with hands-on experience in travel agency operations, high-end guest hospitality, corporate delegations, and cross-border resource integration.',
+      zh: '我是于丽娜，长期深耕跨境文旅、研学产品与商务接待，现任香港永顺旅行社总经理，并创立多家文旅与文化交流机构。我的工作，是把产业资源、城市现场、文化内容与客户需求，转化为可落地、可体验、可延展的文旅产品。',
+      en: 'I am Luna Yu, a cross-border cultural tourism and study travel product builder, and General Manager of Hong Kong Wing Shun Travel. My work translates industry resources, city contexts, cultural content, and client needs into executable, experiential, and scalable travel products.',
     },
     {
-      zh: '在产品设计上，我坚持“有研学，真问题、真现场、真收获”。无论是科技企业参访、非遗主题线路、红楼梦主题江南美学、海外华人寻根、大湾区国际医疗旅行，还是云南芒市腾冲、川渝“祖国山河”、中医康养研学与国际文化交流，我关注的都不只是“去哪里”，而是一个目的地能否被转化为一场有内容、有情感、有审美、有价值的深度体验。我希望每一条线路都能回应真实问题、进入真实现场、留下真实收获，让参与者在行走中理解产业、文化、历史与人的关系，在一次旅程里看见更具体、更有温度的中国。',
-      en: 'In product design, I champion the ethos: "Real Programs, Real Issues, Real Scenarios, and Real Gains." Whether coordinating tech corporate delegations, intangible cultural heritage pathways, Dream of the Red Chamber-themed Jiangnan aesthetics, diaspora homecoming trips, GBA international medical wellness journeys, or TCM wellness tours, I focus not just on "where to go," but on how to transform a destination into an immersive experience with substance, emotion, aesthetic taste, and lasting value.',
+      zh: '我主要服务企业、高校、商协会、海外团组、高净值客户与华人家庭，产品涵盖企业参访、商务接待、文旅研学、非遗文化体验、海外华人寻根、跨境康养与医疗旅行等方向。',
+      en: 'I serve enterprises, universities, chambers of commerce, overseas delegations, high-net-worth clients, and Chinese families abroad through corporate visits, business hospitality, study travel, heritage experiences, diaspora homecoming journeys, wellness programs, and medical travel support.',
     },
     {
-      zh: '我擅长整合企业、学校、媒体、目的地、非遗传承人、海外机构与客户需求，并将其转化为可落地、可传播、可复购的文旅产品。我的产品风格克制、真实而富有文学质感，兼具商业执行力、文化表达力与跨境资源整合能力。',
-      en: 'I orchestrate complex synergies across corporate clients, educational institutions, media outlets, heritage masters, and overseas networks. I translate these synergies into highly executable, shareable, and repeatable travel products characterized by disciplined styling, authentic emotional resonance, and human quality.',
+      zh: '我坚持“有研学，真问题、真现场、真收获”。一条好的路线，不只是把人带到某个地方，而是让参与者在真实场景中理解产业、文化、历史与人的关系，并把一次行走转化为有内容、有情感、有审美、有价值的深度体验。',
+      en: 'I believe every strong route should begin with real questions, enter real places, and leave real gains. A meaningful journey does more than move people through destinations; it helps participants understand industry, culture, history, and human connection through grounded, emotionally resonant experiences.',
     }
-  ],
-  tags: [
+  ],  tags: [
     { zh: '跨境文旅', en: 'Cross-Border Tourism' },
     { zh: '研学课程开发', en: 'Curriculum Design' },
     { zh: 'MICE 商务定制', en: 'Corporate MICE' },
