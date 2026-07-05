@@ -44,11 +44,25 @@ export default function App() {
       const storedContact = localStorage.getItem('personal_contact');
       if (storedProfile) {
         const parsedProfile = JSON.parse(storedProfile);
+        let migratedProfile = false;
         // Ensure the latest avatar URL from the template/data.ts is always used
-        parsedProfile.avatarUrl = defaultProfile.avatarUrl;
+        if (parsedProfile.avatarUrl !== defaultProfile.avatarUrl) {
+          parsedProfile.avatarUrl = defaultProfile.avatarUrl;
+          migratedProfile = true;
+        }
         const cachedTitle = `${parsedProfile.title?.zh || ''} ${parsedProfile.title?.en || ''}`;
         if (/专家|Specialist|Expert/i.test(cachedTitle)) {
           parsedProfile.title = defaultProfile.title;
+          migratedProfile = true;
+        }
+        const cachedBio = Array.isArray(parsedProfile.bio)
+          ? parsedProfile.bio.map((item: TranslationSet) => `${item.zh || ''} ${item.en || ''}`).join(' ')
+          : '';
+        if (/\u5979|我先后创立深圳市国基|在产品设计上，我坚持|我擅长整合企业/.test(cachedBio)) {
+          parsedProfile.bio = defaultProfile.bio;
+          migratedProfile = true;
+        }
+        if (migratedProfile) {
           localStorage.setItem('personal_profile', JSON.stringify(parsedProfile));
         }
         setProfile(parsedProfile);
