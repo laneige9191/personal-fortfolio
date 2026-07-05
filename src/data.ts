@@ -18,7 +18,7 @@ export const defaultProfile: Profile = {
     zh: '有研学，真问题、真现场、真收获',
     en: 'Real Programs, Real Issues, Real Scenarios, Real Gains',
   },
-  avatarUrl: '/src/assets/images/regenerated_image_1783181952266.png',
+  avatarUrl: '/src/assets/images/luna-yu-avatar-professional.png',
   bio: [
     {
       zh: '我先后创立深圳市国基企业文化管理有限公司、乐景国际旅行社、深领航文旅，并在新西兰创立 New Zealand WT Cultural Exchange & Tourism Limited（NZWT）。现任香港永顺旅行社总经理，长期深耕旅行社运营、客户服务、团队接待和跨境资源整合。我的产品体系涵盖企业公关 MICE、金融行业高净值客户私享会、深蓝研学品牌、银发壮游俱乐部、面向港澳及海外访客的"即刻深圳" (GoSZ) 商务接待与企业参访、电视台合作开发粤港澳大湾区研学，以及香港高校赴内地名企参访项目。',
