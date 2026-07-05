@@ -94,11 +94,11 @@ export default function App() {
   };
 
   const text = {
-    heroTag: { zh: '文旅与研学合伙人门户', en: 'CULTURAL TOURISM & STUDY PORTFOLIO' } as TranslationSet,
-    heroTitleLead: { zh: '你好，我是一位以文旅和研学为载体，', en: 'A Product-Focused Entrepreneur Connecting' } as TranslationSet,
-    heroTitleEnd: { zh: '连接香港青年、大湾区产业、海外华人与中国文化现场的产品型创业者。', en: 'GBA Youth, Local Industries & Chinese Heritage' } as TranslationSet,
-    heroSub: { zh: '让参与者在行走中理解产业、文化、历史与人的关系，也在一次旅程里看见更具体、更有温度的中国。', en: 'Empowering participants to understand the connection between industry, culture, and history, uncovering a more vivid and heartfelt China.' } as TranslationSet,
-    heroContactBtn: { zh: '立即联络合作', en: 'Connect Now' } as TranslationSet,
+    heroTag: { zh: '文旅与研学产品人', en: 'CULTURAL TOURISM PRODUCT BUILDER' } as TranslationSet,
+    heroTitleLead: { zh: '连接深港、海外华人与', en: 'Connecting Shenzhen-HK,' } as TranslationSet,
+    heroTitleEnd: { zh: '中国文化现场', en: 'Overseas Chinese Communities & Chinese Heritage' } as TranslationSet,
+    heroSub: { zh: '我以文旅和研学为载体，整合深港跨境、海外社群、产业参访与文化现场资源，设计可落地、可传播、可复购的深度体验产品。', en: 'I build study-tour and cultural travel products that connect Shenzhen-HK resources, overseas communities, industry visits, and living cultural contexts into executable, memorable experiences.' } as TranslationSet,
+    heroContactBtn: { zh: '联络合作', en: 'Connect' } as TranslationSet,
     heroPortfolioBtn: { zh: '查看业务版图', en: 'Explore Venture' } as TranslationSet,
     customizerTip: { zh: '配置您的网站', en: 'Personalize App' } as TranslationSet,
     navProfile: { zh: '个人简介', en: 'Bio' } as TranslationSet,
@@ -190,17 +190,17 @@ export default function App() {
       </header>
 
       {/* HERO BANNER SECTION */}
-      <section className="relative pt-36 pb-20 md:pt-48 md:pb-28 border-b border-neutral-900 overflow-hidden">
+      <section className="relative pt-28 pb-14 md:pt-48 md:pb-28 border-b border-neutral-900 overflow-hidden">
         {/* Decorative Grid Mesh */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-6 md:space-y-8">
           {/* Animated welcome tag */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 text-[10px] font-mono tracking-widest text-emerald-400 uppercase"
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-900/90 border border-neutral-800 text-[10px] font-mono tracking-widest text-emerald-400 uppercase"
           >
             <Sparkles className="w-3 h-3 text-emerald-400 animate-pulse" />
             <span>{text.heroTag[language]}</span>
@@ -212,7 +212,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-none font-display"
+              className="text-[2.55rem] sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.05] font-display"
             >
               <span>{text.heroTitleLead[language]}</span>
               <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
@@ -224,7 +224,7 @@ export default function App() {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-neutral-400 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed"
+              className="text-neutral-300/85 text-[15px] sm:text-lg md:text-xl max-w-2xl mx-auto leading-7 md:leading-relaxed"
             >
               {text.heroSub[language]}
             </motion.p>
@@ -235,18 +235,18 @@ export default function App() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 pt-2 md:pt-4"
           >
             <button
               onClick={() => handleScrollTo('contact')}
-              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:opacity-90 text-neutral-950 font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/10 cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-cyan-500 hover:opacity-90 text-neutral-950 font-bold text-sm transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/10 cursor-pointer"
             >
               <span>{text.heroContactBtn[language]}</span>
               <ArrowRight className="w-4 h-4 text-neutral-950" />
             </button>
             <button
               onClick={() => handleScrollTo('business')}
-              className="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-neutral-700 text-neutral-300 hover:text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-6 py-3 rounded-xl bg-neutral-900/70 border border-neutral-800 hover:border-neutral-700 text-neutral-300 hover:text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>{text.heroPortfolioBtn[language]}</span>
               <ChevronRight className="w-4 h-4 text-emerald-400" />
