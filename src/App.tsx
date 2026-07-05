@@ -61,7 +61,12 @@ export default function App() {
         setProfile(parsedProfile);
       }
       if (storedContact) {
-        setContactInfo(JSON.parse(storedContact));
+        const parsedContact = JSON.parse(storedContact);
+        if (parsedContact.wechatQrUrl !== defaultContactInfo.wechatQrUrl) {
+          parsedContact.wechatQrUrl = defaultContactInfo.wechatQrUrl;
+          localStorage.setItem('personal_contact', JSON.stringify(parsedContact));
+        }
+        setContactInfo(parsedContact);
       }
     } catch (e) {
       console.error('Error reading localStorage configurations', e);
