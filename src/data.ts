@@ -11,8 +11,8 @@ export const defaultProfile: Profile = {
     en: 'Luna Yu',
   },
   title: {
-    zh: '香港永顺旅行社总经理 · 跨境文旅与研学产品专家',
-    en: 'General Manager of WT Travel HK · Cross-Border Cultural Tourism Specialist',
+    zh: '香港永顺旅行社总经理 · 跨境文旅与研学知行合一的产品人',
+    en: 'General Manager of WT Travel HK · Practice-Oriented Cultural Tourism Product Builder',
   },
   slogan: {
     zh: '有研学，真问题、真现场、真收获',
@@ -21,16 +21,16 @@ export const defaultProfile: Profile = {
   avatarUrl: '/src/assets/images/regenerated_image_1783181952266.png',
   bio: [
     {
-      zh: '于丽娜，深圳市国基企业文化管理有限公司、乐景国际旅行社、深领航文旅创始人，并在新西兰创立 New Zealand WT Cultural Exchange & Tourism Limited（NZWT）。现任香港永顺旅行社总经理，积累了扎实的旅行社运营、客户服务、团队接待和跨境资源整合经验。产品体系涵盖企业公关 MICE、金融行业高净值客户私享会、深蓝研学品牌、银发壮游俱乐部、面向港澳及海外访客的"即刻深圳" (GoSZ) 商务接待与企业参访、电视台合作开发粤港澳大湾区研学，以及香港高校赴内地名企参访项目。',
-      en: 'Luna Yu is the founder of Shenzhen Guoji Corporate Culture Management, Lejing International Travel Service, Deep Navigation Cultural Tourism, and New Zealand WT Cultural Exchange & Tourism Limited (NZWT) in New Zealand. Currently serving as the General Manager of Hong Kong Wing Shun Travel, she has accumulated extensive, hands-on experience in travel agency operations, high-end guest hospitality, corporate delegations, and cross-border resource integration.',
+      zh: '我先后创立深圳市国基企业文化管理有限公司、乐景国际旅行社、深领航文旅，并在新西兰创立 New Zealand WT Cultural Exchange & Tourism Limited（NZWT）。现任香港永顺旅行社总经理，长期深耕旅行社运营、客户服务、团队接待和跨境资源整合。我的产品体系涵盖企业公关 MICE、金融行业高净值客户私享会、深蓝研学品牌、银发壮游俱乐部、面向港澳及海外访客的"即刻深圳" (GoSZ) 商务接待与企业参访、电视台合作开发粤港澳大湾区研学，以及香港高校赴内地名企参访项目。',
+      en: 'I founded Shenzhen Guoji Corporate Culture Management, Lejing International Travel Service, Deep Navigation Cultural Tourism, and New Zealand WT Cultural Exchange & Tourism Limited (NZWT). I now serve as General Manager of Hong Kong Wing Shun Travel, with hands-on experience in travel agency operations, high-end guest hospitality, corporate delegations, and cross-border resource integration.',
     },
     {
-      zh: '在产品设计上，她坚持“有研学，真问题、真现场、真收获”。无论是科技企业参访、非遗主题线路、红楼梦主题江南美学、海外华人寻根、大湾区国际医疗旅行，还是云南芒市腾冲、川渝“祖国山河”、中医康养研学与国际文化交流，她关注的都不只是“去哪里”，而是一个目的地能否被转化为一场有内容、有情感、有审美、有价值的深度体验。她希望每一条线路都能回应真实问题、进入真实现场、留下真实收获，让参与者在行走中理解产业、文化、历史与人的关系，在一次旅程里看见更具体、更有温度的中国。',
-      en: 'In product design, she champions the ethos: "Real Programs, Real Issues, Real Scenarios, and Real Gains." Whether coordinating tech corporate delegations, intangible cultural heritage pathways, Dream of the Red Chamber-themed Jiangnan aesthetics, diaspora homecoming trips, GBA international medical wellness journeys, or TCM wellness tours, she focuses not just on "where to go," but on how to transform a destination into an immersive experience loaded with substance, emotion, aesthetic taste, and lasting value.',
+      zh: '在产品设计上，我坚持“有研学，真问题、真现场、真收获”。无论是科技企业参访、非遗主题线路、红楼梦主题江南美学、海外华人寻根、大湾区国际医疗旅行，还是云南芒市腾冲、川渝“祖国山河”、中医康养研学与国际文化交流，我关注的都不只是“去哪里”，而是一个目的地能否被转化为一场有内容、有情感、有审美、有价值的深度体验。我希望每一条线路都能回应真实问题、进入真实现场、留下真实收获，让参与者在行走中理解产业、文化、历史与人的关系，在一次旅程里看见更具体、更有温度的中国。',
+      en: 'In product design, I champion the ethos: "Real Programs, Real Issues, Real Scenarios, and Real Gains." Whether coordinating tech corporate delegations, intangible cultural heritage pathways, Dream of the Red Chamber-themed Jiangnan aesthetics, diaspora homecoming trips, GBA international medical wellness journeys, or TCM wellness tours, I focus not just on "where to go," but on how to transform a destination into an immersive experience with substance, emotion, aesthetic taste, and lasting value.',
     },
     {
-      zh: '于丽娜擅长整合企业、学校、媒体、目的地、非遗传承人、海外机构与客户需求，并将其转化为可落地、可传播、可复购的文旅产品。产品风格克制、真实而富有文学质感，兼具商业执行力、文化表达力与跨境资源整合能力。',
-      en: 'Luna excels in orchestrating complex synergies across corporate clients, educational institutions, media outlets, heritage masters, and overseas networks. She translates these synergies into highly executable, viral, and repeatable travel products characterized by disciplined styling, authentic emotional resonance, and literal, human quality.',
+      zh: '我擅长整合企业、学校、媒体、目的地、非遗传承人、海外机构与客户需求，并将其转化为可落地、可传播、可复购的文旅产品。我的产品风格克制、真实而富有文学质感，兼具商业执行力、文化表达力与跨境资源整合能力。',
+      en: 'I orchestrate complex synergies across corporate clients, educational institutions, media outlets, heritage masters, and overseas networks. I translate these synergies into highly executable, shareable, and repeatable travel products characterized by disciplined styling, authentic emotional resonance, and human quality.',
     }
   ],
   tags: [

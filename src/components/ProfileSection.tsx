@@ -87,7 +87,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               </div>
               <div className="flex items-center gap-3">
                 <Globe className="w-4 h-4 text-neutral-400 flex-shrink-0" />
-                <span>{language === 'zh' ? '中文 / 英文 双语' : 'Bilingual: Mandarin / English'}</span>
+                <span>{language === 'zh' ? '深港跨境与海外资源整合' : 'Shenzhen-HK Cross-Border & Overseas Resource Integration'}</span>
               </div>
               <div className="flex items-center gap-3">
                 <Briefcase className="w-4 h-4 text-neutral-400 flex-shrink-0" />
