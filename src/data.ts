@@ -59,8 +59,8 @@ export const defaultProfile: Profile = {
         en: 'Deep Navigation Tourism / Founder',
       },
       description: {
-        zh: '创立“深蓝研学 / Deep Blue Academy”品牌。与江苏卫视等主流媒体联动进行大湾区科创研学与文娱文创线路精品设计。',
-        en: 'Launched the "Deep Blue Academy" study tour brand. Collaborating with mainstream networks like Jiangsu TV on specialized science and culture study paths.',
+        zh: '打造乐景国旅旗下“深蓝研学 / Deep Blue Academy”品牌，定位为私享会行程定制服务商。与江苏卫视等主流媒体联动，进行大湾区科创研学与文娱文创线路精品设计。',
+        en: 'Built Deep Blue Academy under Lejing Travel as a bespoke private event and itinerary service brand, collaborating with mainstream networks like Jiangsu TV on specialized science and culture study paths.',
       },
     },
     {
